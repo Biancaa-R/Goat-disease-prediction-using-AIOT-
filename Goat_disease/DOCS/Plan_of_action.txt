@@ -1,0 +1,26 @@
+MOVEMENT:
+
+1.Buy an accelerometer to determine the pose of the goat
+2.Studying the pose in which the goat spends most of its time in
+3.Can include vibration sensor.
+
+HEART RATE:
+1.Buy a heart rate sensor to monitor its heart rate either slow or fast
+
+CAMERA:
+Just to detect nasal discharge, infection through camera
+
+Create a profile for each goat -with a picture assocated.
+
+TEMPERATURE SENSOR:
+To constantly monitor the temperature input data.
+
+
+DISEASES FOCUSED ON:
+
+1.TETANUS
+2.ANTHARAX
+3.ETHRYMA SCABY MOUTH
+4.GOAT POX
+
+5.Talk ith rach

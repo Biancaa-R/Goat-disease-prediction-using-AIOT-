@@ -9,8 +9,14 @@ HEART RATE:
 
 CAMERA:
 Just to detect nasal discharge, infection through camera
+Maybe?
+Kidding of Goat---> Not hard
+Number of goats?
 
+Media pipe: posture detection(TETANUS)!!
 Create a profile for each goat -with a picture assocated.
+< :D > 
+//upload all data from rpi itself na we would need protocols like mqtt <3
 
 TEMPERATURE SENSOR:
 To constantly monitor the temperature input data.
@@ -23,4 +29,3 @@ DISEASES FOCUSED ON:
 3.ETHRYMA SCABY MOUTH
 4.GOAT POX
 
-5.Talk ith rach

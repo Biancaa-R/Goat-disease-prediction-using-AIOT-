@@ -1,0 +1,15 @@
+D:\>pip3 install paho-mqtt
+Collecting paho-mqtt
+  Downloading paho-mqtt-1.6.1.tar.gz (99 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.4/99.4 kB 713.1 kB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: paho-mqtt
+  Building wheel for paho-mqtt (setup.py) ... done
+  Created wheel for paho-mqtt: filename=paho_mqtt-1.6.1-py3-none-any.whl size=65638 sha256=b9b42610c883c61c39edb10180ebf85473e113256450c867a0aa982cb0fa5b9d
+  Stored in directory: c:\users\biancaa. r\appdata\local\pip\cache\wheels\29\ea\a5\ba9a63aaf4cd4e16e8a87ee31fb4d11b04ff5e1735d312619a
+Successfully built paho-mqtt
+Installing collected packages: paho-mqtt
+Successfully installed paho-mqtt-1.6.1
+
+[notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip

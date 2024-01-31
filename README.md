@@ -4,8 +4,11 @@ project for predicting goat disease using AIOT
 for now the diseases considered:
 
 1.ppr-scabby mouth
+
 2.Tetanus
+
 3.Antharax
+
 4.Goat pox
 
 

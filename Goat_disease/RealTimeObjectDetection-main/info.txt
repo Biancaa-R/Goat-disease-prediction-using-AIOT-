@@ -1,0 +1,1 @@
+pbtxt means Protocol Buffer text file. All of TensorFlow‘s file formats are based on Protocol Buffers. pbtxt file is a text file which will be in a human-readable form which will be simple to inspect the structure and content of a saved model.

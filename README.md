@@ -21,3 +21,6 @@ MQTT:
 5. https://helloworld.co.in/article/mqtt-raspberry-pi-esp32
 
 Note: Initial attempt to use tensorflow api for bounding boxes is set for future and I decided to go with YOLOv8n instead as there were unresolved version clashes when using tf api with 1 and 2 ...YOLO   was an easier option to try. So probably in future I would fix the bugs with tensor api
+
+Tool used for annotation: LabelImg
+from the xml files , annotations were converted to yolo 1.1 format ie txt

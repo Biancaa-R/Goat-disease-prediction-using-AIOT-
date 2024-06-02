@@ -19,3 +19,5 @@ MQTT:
 3. https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi
 4. https://www.aranacorp.com/en/udp-communication-between-raspberry-pi-and-esp32/#:~:text=Code%20ESP32%20UDP%20Client,network%20as%20the%20Raspberry%20Pi.
 5. https://helloworld.co.in/article/mqtt-raspberry-pi-esp32
+
+Note: Initial attempt to use tensorflow api for bounding boxes is set for future and I decided to go with YOLOv8n instead as there were unresolved version clashes when using tf api with 1 and 2 ...YOLO   was an easier option to try. So probably in future I would fix the bugs with tensor api

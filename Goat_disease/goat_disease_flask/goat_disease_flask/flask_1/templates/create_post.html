@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="">
+        <!--action is empty as after the posting it should return  to the same page -->
+        {{form.hidden_tag()}} <!--adds a csrf token-->
+        <!--cross site request forgery token.-->
+        <!--accessing the variables from the particular form instance-->
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">New Post</legend>
+
+            <div class="form-group">
+                {{form.title.label(class="form-control-label")}}
+                {% if form.title.errors %}
+                    {{form.title(class= "form-control form-control-lg is-invalid")}}
+                    <div class="invalid-feedback">
+                        {%for error in form.title.errors%}
+                            <span> {{error}} </span>
+                        {%endfor%}
+                    </div>
+                {%else%}
+                    {{form.title(class="form-control form-control-lg")}}<!--where lg=large-->
+                {%endif%}
+            </div>
+            <div class="form-group">
+                {{form.content.label(class="form-control-label")}}
+                {%if form.content.errors %}
+                    {{form.content(class="form-control form-control-lg is-invalid")}}
+                    <div class="invalid-feedback">
+                        {%for error in form.content.errors%}
+                            <span> {{error }}</span>
+                        {%endfor%}
+                    </div>
+                {%else%}
+                    {{form.content(class="form-control form-control-lg")}}<!--where lg=large-->
+                {%endif%}
+
+            <small class="text-muted ml-2">
+                <a href="#">Forgot content?</a>
+            </small>
+        </fieldset>
+        <div class="form-group">
+            {{form.submit(class="btn btn-outline-info")}} <!--Blue hallow-->
+        </div>
+    </form>
+{% endblock content %}

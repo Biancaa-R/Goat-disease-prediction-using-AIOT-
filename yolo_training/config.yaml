@@ -1,0 +1,7 @@
+path: C:/wtf/data
+train: images/train
+val: images/train
+
+names:
+ 0: ppr
+ 1: healthy

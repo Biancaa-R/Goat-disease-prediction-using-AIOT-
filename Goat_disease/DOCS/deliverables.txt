@@ -1,0 +1,22 @@
+1> wearable device with node mcu and a 3d peinted case ----> with holes for the connecting wires 
+2> Velcro connectors
+3> lcd /oled display?
+4> a separate cloud for general health monitoring (if time permits)
+5> day to day noticing ? incase of camera (to avoid redundancy)
+
+6> if one sick goat incase of antharax / tetanus (update based on id number)
+
+---Acute illness from tetanus raises blood pressure and increases heart rate, while tetanus bacteria can infect the heart itself.24 Sept 2015
+The reflexes increase in intensity, and the animal is easily excited into more violent, general spasms by sudden movement or noise. Spasms of head muscles cause difficulty in prehension and mastication of food, hence the common name, lockjaw. In horses, the ears are erect, the tail stiff and extended, the anterior nares dilated, and the third eyelid prolapsed. Walking, turning, and backing are difficult. Spasms of the neck and back muscles cause extension of the head and neck, while stiffness of the leg muscles causes the animal to assume a “sawhorse” stance. Sweating is common.
+
+General spasms disturb circulation and respiration, which results in increased heart rate, rapid breathing, and congestion of mucous membranes. Sheep, goats, and pigs often fall to the ground and exhibit opisthotonos when startled.
+
+Consciousness is not affected. In dogs and cats, localized tetanus often presents as stiffness and rigidity in a limb with a wound. The stiffness progresses to involve the opposing limb and may advance anteriorly. The appearance in generalized tetanus is similar to that described for horses except that the partially open mouth with the lips drawn back (as seen in humans) is usually evident. Young, large-breed dogs seem to be most commonly affected.
+
+Usually, body temperature remains slightly above normal, but it may rise to 108°–110°F (42°–43°C) toward the end of a fatal attack. In mild attacks, the pulse and body temperature remain nearly normal. Mortality rate averages ~80% (~50% in dogs in one study). In animals that recover, there is a convalescent period of 2–6 weeks; protective immunity usually does not develop after recovery.
+
+
+incase of antharax:
+It's the most deadly form of the disease, and is often fatal, even with treatment. Initial signs and symptoms include: Flu-like symptoms for a few hours or days, such as sore throat, mild fever, fatigue and muscle aches.
+
+so temperature 

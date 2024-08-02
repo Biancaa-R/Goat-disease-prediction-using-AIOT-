@@ -15,11 +15,12 @@ r = requests.get("https://api.thingspeak.com/channels/2567333/feeds.json?api_key
 n = json.loads(r.text)
 
 num = 0
+print(len(n["feeds"]))
 for i in range(len(n["feeds"])):
     disease = []
     list1 = [n["feeds"][i]["entry_id"], n['feeds'][i]['field1'], n['feeds'][i]['field2'], n['feeds'][i]['field3'], n['feeds'][i]['created_at']]
     num += 1
-    if num != 1:  # If it's not the first iteration
+    if num :  # If it's not the first iteration
         if list1[1] == "1":
             disease.append("ppr")
         if list1[2] == "1":

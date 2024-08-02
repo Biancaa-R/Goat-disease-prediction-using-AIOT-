@@ -1,7 +1,7 @@
 import requests
 import json
 
-detection={"ppr":"1","antharax":"0","tetanus":"0"}   
+detection={"ppr":"0","antharax":"1","tetanus":"0"}   
 upload=False  
 for i in detection.values():
     if i in ["1",]:

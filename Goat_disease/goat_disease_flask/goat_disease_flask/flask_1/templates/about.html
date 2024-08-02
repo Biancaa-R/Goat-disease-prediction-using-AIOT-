@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
         <title>About page</title>
@@ -6,4 +6,18 @@
     <body>
         <h1>About us</h1>
     </body>
-</html>
+</html> -->
+
+{% extends "layout.html"%}
+
+{% block content %}
+<h1>Why goat disease prediction and forewarning?</h1>
+{% for post in posts %}
+<article class="media content-section">
+    <div class="media-body">
+        <p class="article-content">{{post.content}}</p>
+    </div>
+</article>
+{% endfor %}
+{%endblock content%}
+

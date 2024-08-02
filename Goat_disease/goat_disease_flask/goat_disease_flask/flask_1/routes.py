@@ -6,19 +6,14 @@ from flask_1 import app,db,bcrypt
 from flask_1.forms import RegistrationForm,LoginForm, UpdateAccountForm, PostForm
 from flask_login import login_user,current_user, logout_user, login_required
 
-posts1=[
-    {
-        'author':"cory", 'title':'blog_post_1',"content":"The first post","date":"january 2020"
-    },
-    {
-        "author":"harry","title":"Issues in indian farming","content":'''One of the major challenges faced by Indian agriculture is the problem of soil degradation and nutrient depletion. Soil degradation occurs due to several factors such as erosion, loss of organic matter, and chemical pollution, amongst others. As a result, Indian soil is losing its fertility at an alarming rate, leading to decreased crop yields and reduced productivity.
 
-Farmers often resort to using chemical fertilizers to compensate for the loss of soil fertility, which only exacerbates the problem. The overuse of chemical fertilizers damages the soil microbiome and reduces its ability to retain moisture and essential nutrients.
+data=[{"content":'''Goat farming is a vital agricultural enterprise that supports the livelihoods of millions of farmers around the globe. Goats provide a wide array of products, including meat, milk, fiber, and hides, which are integral to the economies of many rural communities. However, the productivity and health of goats are often compromised by various infectious and non-infectious diseases. These diseases not only affect the well-being of the animals but also have substantial economic ramifications for the farmers and the broader agricultural economy.
 
-Furthermore, soil degradation also contributes to environmental issues like air and water pollution. When soil loses its fertility, it affects the quality of crops, which in turn affects human health and well-being.
+The economic impact of goat diseases is multifaceted. Infected animals often exhibit reduced growth rates, lower milk yields, and poor reproductive performance, which directly diminishes the overall productivity of the herd. Increased mortality rates and the need for frequent veterinary interventions further escalate the costs for goat farmers. Additionally, outbreaks of contagious diseases can lead to trade restrictions and loss of market access, further exacerbating the economic burden.
 
-To address this issue, farmers need to adopt sustainable practices like crop rotation, intercropping, and agroforestry. These practices help to restore soil fertility and reduce soil erosion. For example, crop rotation involves planting different crops on the same land in successive seasons. This helps to replenish soil nutrients and reduce pest and disease buildup.''',"date":"nov 2023"
-    }
+Diseases such as Blue Tongue, Anthrax, Tetanus, and Orf Scab are particularly concerning due to their severe symptoms and high morbidity and mortality rates. These diseases can spread rapidly within herds and, in some cases, to other livestock or even humans, posing significant public health risks. The management and control of these diseases require substantial investments in veterinary care, biosecurity measures, and farmer education, which can strain the financial resources of small-scale farmers.
+
+Understanding the epidemiology and impact of these diseases is crucial for developing effective prevention and control strategies. By mitigating the incidence and spread of diseases in goats, farmers can enhance animal welfare, improve productivity, and ensure the sustainability of their farming operations. Consequently, addressing goat diseases is not only essential for animal health but also for the economic stability and growth of rural communities that depend on goat farming as a primary source of income.'''},
 ]
        
 
@@ -34,7 +29,7 @@ for i in range(len(n["feeds"])):
     disease = []
     list1 = [n["feeds"][i]["entry_id"], n['feeds'][i]['field1'], n['feeds'][i]['field2'], n['feeds'][i]['field3'], n['feeds'][i]['created_at']]
     num += 1
-    if num != 1:  # If it's not the first iteration
+    if num :  # If it's not the first iteration
         if list1[1] == "1":
             disease.append("ppr")
         if list1[2] == "1":
@@ -43,7 +38,7 @@ for i in range(len(n["feeds"])):
             disease.append("tetanus")
         disease_str = ", ".join(disease) if disease else "none"
         dict1 = {
-            "author": list1[0],
+            "author": list1[0]-1,
             "title": "disease detected on " + list1[4],
             "content": "The diseases detected is/are " + disease_str,
             "date": list1[4]
@@ -58,7 +53,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html",posts=data)
 
 @app.route("/register",methods=['POST','GET']) #list of allowed methods in our route
 def register():

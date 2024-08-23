@@ -24,6 +24,15 @@ IP:
 1. https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address
 2. https://www.geeksforgeeks.org/structure-and-types-of-ip-address/
 
+MQTT ONLINE SERVER:
+
+1. https://cloud-intl.emqx.com/console/deployments
+
+2. https://docs.emqx.com/en/cloud/latest/connect_to_deployments/python_sdk.html
+
+3. https://docs.emqx.com/en/cloud/latest/connect_to_deployments/esp8266.html
+4. control: https://docs.emqx.com/en/cloud/latest/deployments/stop_delete_deployment.html
+
 Note: Initial attempt to use tensorflow api for bounding boxes is set for future and I decided to go with YOLOv8n instead as there were unresolved version clashes when using tf api with 1 and 2 ...YOLO   was an easier option to try. So probably in future I would fix the bugs with tensor api (seems quite unlikely now)
 
 The .pt YOLO v8 model was converted to onnx for deployment in raspberrypi 4b .The result of the form (x,y,h,w) is used for the generation of bounding boxes.

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>1.jpg</filename>
+	<path>D:\Goat_disease\RealTimeObjectDetection-main\Tensorflow\workspace\images\train\1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>416</width>
+		<height>416</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ppr</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>302</xmin>
+			<ymin>212</ymin>
+			<xmax>412</xmax>
+			<ymax>313</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>goat-ppr</folder>
+	<filename>50.png</filename>
+	<path>D:\Goat_disease\images_collected\goat-ppr\50.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>473</width>
+		<height>319</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ppr</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>271</xmin>
+			<ymin>130</ymin>
+			<xmax>409</xmax>
+			<ymax>217</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -167,10 +167,8 @@ void loop() {
   long now = millis();
   if (now - lastMsg > 4000) {
     lastMsg = now;
-
-    client.publish("esp8266", "pulse: "+pulse); //topic name (to which this ESP32 publishes its data). 37 is the dummy value.
-    client.publish("esp8266", "pir: "+motion);
-    client.publish("esp8266" ,"temp: "+tc);
+    float arr1 ={pulse,motion,tc};
+    client.publish("esp8266",arr1); 
     
   }
   

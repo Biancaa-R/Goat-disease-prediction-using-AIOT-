@@ -3,7 +3,8 @@ import time
 from ultralytics import YOLO
 
 # Load the model (potentially only once outside the loop)
-model = YOLO("best.onnx")
+#model = YOLO("C:\\wtf\\runs\\detect\\train2\\weights\\best.onnx")
+model = YOLO("C:/wtf/runs/detect/train2/weights/best.onnx")
 
 fps = 0
 pos = (130, 160)
@@ -28,41 +29,40 @@ while True:
     # resized_frame = cv2.resize(frame, (320, 320))
 
     # Perform object detection with lower verbosity for speed
-    results = model.predict(source=frame, conf=0.01, verbose=False)
+    frame=cv2.resize(frame, (640,640))
+    results = model.predict(source=frame, conf=0.01, verbose=True, task="detect")
 
-    # Process detections (if any)
     if results:
-        try:
-            # Extract bounding box and draw rectangle
-            detection = results[0]  # Assuming single object detection
-            box = detection.boxes[0]
-            start_point = (int(box.xyxy[0]), int(box.xyxy[1]))
-            end_point = (int(box.xyxy[2]), int(box.xyxy[3]))
-            cv2.rectangle(frame, start_point, end_point, (255, 0, 0), 3)
-        except IndexError:
-            #print("No detections found")
-            #import xml.dom.minidom as minidom
+        for detection in results:
+            for box in detection.boxes:
+                # Extract bounding box coordinates
+                x1, y1, x2, y2 = box.xyxy[0][0].item(), box.xyxy[0][1].item(), box.xyxy[0][2].item(), box.xyxy[0][3].item()
+                start_point = (int(x1), int(y1))
+                end_point = (int(x2), int(y2))
 
-        # Parse the XML file
-        #doc = minidom.parse(path+"16.xml")
-            import xml.etree.ElementTree as ET
-
-            tree = ET.parse(path+img+".xml")
-            root = tree.getroot()
-
-            boxes = []
-            for obj in root.findall('object'):
-                bbox = obj.find('bndbox')
-                xmin = int(bbox.find('xmin').text)
-                ymin = int(bbox.find('ymin').text)
-                xmax = int(bbox.find('xmax').text)
-                ymax = int(bbox.find('ymax').text) 
-
-                boxes.append({'xmin':xmin, 'ymin': ymin, 'xmax': xmax, 'ymax': ymax})
-                start_point = (int(xmin), int(ymin))
-                end_point = (int(xmax), int(ymax))
+                # Draw rectangle on the frame
                 cv2.rectangle(frame, start_point, end_point, (255, 0, 0), 3)
-                print(boxes)
+
+    else:
+
+        import xml.etree.ElementTree as ET
+
+        tree = ET.parse(path+img+".xml")
+        root = tree.getroot()
+
+        boxes = []
+        for obj in root.findall('object'):
+            bbox = obj.find('bndbox')
+            xmin = int(bbox.find('xmin').text)
+            ymin = int(bbox.find('ymin').text)
+            xmax = int(bbox.find('xmax').text)
+            ymax = int(bbox.find('ymax').text) 
+
+            boxes.append({'xmin':xmin, 'ymin': ymin, 'xmax': xmax, 'ymax': ymax})
+            start_point = (int(xmin), int(ymin))
+            end_point = (int(xmax), int(ymax))
+            cv2.rectangle(frame, start_point, end_point, (255, 0, 0), 3)
+            print(boxes)
 
 
 

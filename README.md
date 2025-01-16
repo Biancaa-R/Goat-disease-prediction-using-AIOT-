@@ -54,6 +54,12 @@ The .pt YOLO v8 model was converted to onnx for deployment in raspberrypi 4b .Th
 Tool used for annotation: LabelImg
 from the xml files , annotations were converted to yolo 1.1 format ie txt
 
+RESOURCES:
+1. https://drive.google.com/drive/folders/1Uq5VVKE64vggfQtM2kja1mdisYqW5v2C?usp=sharing
+2. https://drive.google.com/drive/folders/1AubdQKW3eLRSy-C3MSKuq0gYIuVeyR_g?usp=drive_link
+3. https://drive.google.com/drive/folders/1woWyNizV9cDExXaiY-9SY5uT4qvFNyts?usp=drive_link
+4. https://drive.google.com/drive/folders/11Sb0CtsGYUicYHMPEiW7TS_HmzokG8M_?usp=drive_link
+
 FUTURE SCOPE:
 1. Add more sensors in the client circuit and more disease detection
 2. Display graphs with the generated data in the flask site

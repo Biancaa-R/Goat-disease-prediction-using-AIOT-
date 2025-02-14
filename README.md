@@ -11,6 +11,10 @@ The common diseases considered:
 
 4.Goat pox
 
+For checking of PPR (YOLO model in onnx format) //in system: 
+* https://github.com/Biancaa-R/Goat-disease-prediction-using-AIOT-/blob/main/Goat_disease/rpi_model/video_strem_pre_existing.py
+* Needs the file structure --> Images found in video stream folder (For testing)
+
 Documentation:
 
 1. Plan of action/ deliverables: https://github.com/Biancaa-R/Goat-disease-prediction-using-AIOT-/tree/main/Goat_disease/DOCS
